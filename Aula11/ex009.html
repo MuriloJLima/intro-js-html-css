@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pais</title>
+</head>
+<body>
+    <h1>SISTEMA DE PAIS</h1>
+    país em que mora: <input type="text" name="txtpais" id="txtpais"> <br>
+    <input type="button" value="verificar" onclick="definir()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function definir(){
+            var txtpais = window.document.getElementById("txtpais")
+            var res = window.document.getElementById("res")
+            var pais = txtpais.value
+            
+            if (txtpais == brasil) {
+                res.innerHTML = '<p>vc é brasileiro<p>'
+            }
+            else{
+                res.innerHTML = 'estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
